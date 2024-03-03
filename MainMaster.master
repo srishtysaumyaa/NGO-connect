@@ -1,0 +1,169 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMaster.master.cs" Inherits="MainMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+      <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+     <!-- Top Bar Start -->
+        <div class="top-bar d-none d-md-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="top-bar-left">
+                            <div class="text">
+                                <i class="fa fa-phone-alt"></i>
+                                <p>+123 789 5640</p>
+                            </div>
+                            <div class="text">
+                                <i class="fa fa-envelope"></i>
+                                <p>ngocharity751@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="top-bar-right">
+                            <div class="social">
+                               <%-- <a href="https://twitter.com/FoodAid2"><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/ngocharity751/?igshid=YmMyMTA2M2Y%3D"><i class="fab fa-instagramh"></i>--%></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+
+          <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="Default.aspx" class="navbar-brand">CHARITY</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="Default.aspx" class="nav-item nav-link">Home</a>
+                        <a href="AboutUs.aspx" class="nav-item nav-link">About</a>
+                         <a href="SignIn.aspx" class="nav-item nav-link">sign in</a>
+                         <a href="Registration.aspx" class="nav-item nav-link">register</a>
+                        
+                        
+                       
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu">
+                                
+                                <a href="whatwedo.aspx" class="dropdown-item">What We Do</a>
+                                
+                               
+                                <a href="ourpage.aspx" class="dropdown-item">our page</a>
+                            </div>
+                        </div>
+                        <a href="ContactUs.aspx" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+      <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-contact">
+                            
+                            <div class="footer-social">
+                                <a class="btn btn-custom" href="https://twitter.com/NgoCharity1?t=7oZyomoFWBhC717sn0XCEA&s=09"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-custom" href="https://www.facebook.com/profile.php?id=100090488011894"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-custom" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-custom" href="https://www.instagram.com/ngocharity751/?igshid=YmMyMTA2M2Y%3D"><i class="fab fa-instagram"></i></a>
+                               <a class="btn btn-custom" href=""><i class="fab fa-linkedin-in"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-link">
+                            <h2>Popular Links</h2>
+                            <a href="aboutus.aspx">About Us</a>
+                            <a href="contact.aspx">Contact Us</a>
+                            <a href="ourpage.aspx">our page</a>
+                           
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-link">
+                            <h2>Useful Links</h2>
+                            <a href="">Terms of use</a>
+                            <a href="">Privacy policy</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Back to top button -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+     <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/parallax/parallax.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+    </form>
+</body>
+</html>
